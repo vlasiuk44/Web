@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ToDo</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+<body>
+    <div class="general-container">
+        <div class="task-container">
+            <div class="task-container_head-panel">
+                <div class="task-container_head-panel_title">Список задач</div>
+                <div class="task-container_head-panel_add-panel">
+                    <div class="task-container_head-panel_add-panel_add">
+                        <img src="res/add.svg">
+                    </div>
+                    <div class="task-container_head-panel_add-panel_text">Добавить</div>
+                </div>
+            </div>
+            <div class="task-container_task-field"></div>
+        </div>
+        <div class="task-card none">
+            <div class="task-card_title">Карточка задачи</div>
+            <div class="task-card_task">Задача</div>
+            <input class="task-card_description" placeholder="Описание задачи" maxlength="20">
+            <div class="task-card_priority-block">
+                <div class="task-card_priority-block_checkbox">
+                    <img src="res/checkbox-empty.svg">
+                </div>
+                <div class="task-card_priority-block_priority">Высокий приоритет</div>
+                <div class="task-card_priority-block_logo">
+                    <img src="res/priority.svg">
+                </div>
+            </div>
+            <div class="task-card_buttons-block">
+                <div class="task-card_buttons-block_button-save">Сохранить</div>
+                <div class="task-card_buttons-block_button-cancel">Отменить</div>
+            </div>
+        </div>
+    </div>
+    <div class="confirm-window none">
+        <div class="confirm-window_title"></div>
+        <div class="confirm-window_inner-block">
+            <div class="confirm-window_inner-block_button-accept">Да</div>
+            <div class="confirm-window_inner-block_button-decline">Нет</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
